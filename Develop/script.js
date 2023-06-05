@@ -4,7 +4,9 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword () {
+//function to generate password
+function generatePassword() {
+  //promt for password criteria
   let length = parseInt(prompt(` Enter the length of your desired password:
   Password Length betweeen 8 - 128 characters.` ));
   let includeUpperCase = confirm('Include Uppercase Letters?');
@@ -12,11 +14,25 @@ function generatePassword () {
   let includeNumbers = confirm('Include Numbers?');
   let includeSpecialChars = confirm('Include Special Characters?');
 
+  var password = "";
+  var characterSet = "";
+
+  //define characters set based on password criteria
+  if (includeUpperCase) {
+    characterSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+  if (includeLowerCase) {
+    characterSet += "abcdefghijklmnopqrstuvwxyz";
+  }
+  if (includeNumbers){
+    characterSet += "0123456789";
+  }
+  if (includeSpecialChars){
+    characterSet += "!@#$%^&*()-_=+[]{}<>,.?/:;";
+  }
 
 
-
-
-  return 'generated password will go in here';
+  return password;
 }
 
 // Write password to the #password input

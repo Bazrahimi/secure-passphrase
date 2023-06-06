@@ -1,20 +1,37 @@
-// Assignment code here
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 //function to generate password
 function generatePassword() {
-  //promt for password criteria
+  //prompto for length
   let length = parseInt(prompt(` Enter the length of your desired password:
   Password Length betweeen 8 - 128 characters.` ));
-  let includeUpperCase = confirm('Include Uppercase Letters?');
-  let includeLowerCase = confirm('Include Lowercase letters?');
-  let includeNumbers = confirm('Include Numbers?');
-  let includeSpecialChars = confirm('Include Special Characters?');
+  //check the length 
+  if (!length || length < 8 || length > 128) {
+    alert('Invalid Password length. Please choose between 8 to and 128 characters');
+    return "";
+  }
+  //alert if the user dont choose any the option
+  let includeUpperCase = false;
+  let includeLowerCase = false;
+  let includeNumbers = false;
+  let includeSpecialChars = false;
+  let selectionMade = false;
+          
+  while (!selectionMade) {
+    includeUpperCase = confirm('Include Uppercase Letters?');
+    includeLowerCase = confirm('Include Lowercase letters?');
+    includeNumbers = confirm('Include Numbers?');
+    includeSpecialChars = confirm('Include Special Characters?');
+  
+    if ( includeUpperCase || includeLowerCase || includeNumbers || includeSpecialChars) {
+    selectionMade = true;
+    } else {
+      alert('At least one Option must be selected for the passsword');
+    }
+  }
 
-  var password = "";
   var characterSet = "";
 
   //define characters set based on password criteria
@@ -31,8 +48,11 @@ function generatePassword() {
     characterSet += "!@#$%^&*()-_=+[]{}<>,.?/:;";
   }
 
-
+  var password = "";
+  for (i = 0; i < length; i++) { password += characterSet.charAt(Math.floor(Math.random() * characterSet.length));
+  }
   return password;
+
 }
 
 // Write password to the #password input

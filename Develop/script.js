@@ -3,17 +3,17 @@ var generateBtn = document.querySelector("#generate");
 
 // Function to generate password
 function generatePassword() {
-  // Prompt for length
+  // Prompt for criteria for passphrase length
   let length = parseInt(prompt("Enter the length of your desired password (8 - 128 characters):"));
   
-  // Check the length
+  // passphrase length requirement
   if (!length || length < 8 || length > 128) {
     alert(`   Invalid password length! 
     Please choose a length of your password between 8 and 128      characters.`);
     return "";
   }
 
-  // Validating character type selection.
+  // Validating character type criteria selection.
   let includeUpperCase = false;
   let includeLowerCase = false;
   let includeNumbers = false;
@@ -35,7 +35,7 @@ function generatePassword() {
 
   let characterSet = "";
 
-  // Define character set based on password criteria
+  // Define character set based on passphrase criteria
   if (includeUpperCase) {
     characterSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }

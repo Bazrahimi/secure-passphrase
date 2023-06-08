@@ -1,4 +1,4 @@
-# Generate Secure Passphrase
+# Generate Secure password
 
 ## Description
 

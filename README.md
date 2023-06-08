@@ -1,38 +1,35 @@
-# <Generate Secure-Passphrase>
+# Generate Secure Passphrase
 
 ## Description
 
-By modifying the given starter code, I have created a browser-based application that allows users to generate randomized passwords based on their chosen criteria. The application utilizes JavaScript to power its functionalities and can be accessed through a web browser.
+I have modified the provided starter code to create a browser-based application that generates randomized passwords based on user-selected criteria. This application is powered by JavaScript and can be accessed through a web browser.
+
 
 ## Installation
-It is a browser-based application.
-The code base is as follow: 
-* index.html: is the structure of the webpage.
-* Develop/style.css provide style to the webpage.
-* Develop/script.js: JavaScript provide the interactivity of the app.
+This is a browser-based application. The code consists of the following files:
+
+- `index.html`: Contains the structure of the webpage.
+- `Develop/style.css`: Provides styling for the webpage.
+- `Develop/script.js`: Implements the interactivity of the app.
 
 
 
 ## Usage
 
-Please feel free to use this code as starter-code for your own webpage. you alwase can modify the HTML and CSS and JavaScript files to customize the design.
+Feel free to use this code as a starter for your own webpage. You can customize the design by modifying the HTML, CSS, and JavaScript files.
 
 Visit the [deployed webpage](https://bazrahimi.github.io/secure-passphrase/) to see the live version.
 
+![Screenshot of the webpage](./Develop/web-screenshot.png)
 
-<<<<<<< HEAD
-![Screenshot of webpage](./Develop/web-screenshot.png)
-=======
-![Screenshot of webpage](Develop/Screenshot 2023-06-08 at 3.58.09 pm.png)
->>>>>>> 486bbf2f75197e4ed70e2553bc6c62a8dc9b6cb5
 
 ## Credits
 
-[https://github.com/coding-boot-camp/urban-octo-telegram.git](https://git.bootcampcontent.com/Monash-University/MONU-VIRT-FSF-PT-05-2023-U-LOLC.git)
+- Starter code: [https://github.com/coding-boot-camp/urban-octo-telegram.git](https://github.com/coding-boot-camp/urban-octo-telegram.git)
+- Zoom Recording: [https://applications.zoom.us/lti/rich/home/recording/detail](https://applications.zoom.us/lti/rich/home/recording/detail)
 
-[https://applications.zoom.us/lti/rich/home/recording/detail](https://applications.zoom.us/lti/rich/home/recording/detail)
-[https://git.bootcampcontent.com/Monash-University/MONU-VIRT-FSF-PT-05-2023-U-LOLC
-](https://applications.zoom.us/lti/rich/home/recording/detail)
 ## License
 
-The code base is released under the MIT Licese, but feel free to use, modify, and distribute the code.
+The code is released under the MIT License. Feel free to use, modify, and distribute it.
+
+---

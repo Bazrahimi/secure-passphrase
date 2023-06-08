@@ -20,7 +20,11 @@ Please feel free to use this code as starter-code for your own webpage. you alwa
 Visit the [deployed webpage](https://bazrahimi.github.io/secure-passphrase/) to see the live version.
 
 
+<<<<<<< HEAD
 ![Screenshot of webpage](./Develop/web-screenshot.png)
+=======
+![Screenshot of webpage](Develop/Screenshot 2023-06-08 at 3.58.09 pm.png)
+>>>>>>> 486bbf2f75197e4ed70e2553bc6c62a8dc9b6cb5
 
 ## Credits
 
